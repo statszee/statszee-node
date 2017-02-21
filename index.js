@@ -10,14 +10,12 @@ module.exports = class StatszeeDataCollector {
     this.options = defaults(options, {
       baseUrl: '',
       key: null,
-
       writeConcern: 'none',
       interval: 5000,
       timeout: 5000,
       retry: 15000,
       splicePart: 250,
       backPressureQuota: 1000,
-
       defaultPrecision: '1h',
       start: true,
       canSend: true
