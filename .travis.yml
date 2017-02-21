@@ -1,10 +1,18 @@
 sudo: true
 language: node_js
 os:
-  - linux
-  - osx
+- linux
+- osx
 node_js:
 - 4
 - 5
 - 6
 - 7
+deploy:
+  provider: npm
+  email: lobetia@gmail.com
+  api_key:
+    secure: PTzmHIRmMgNLbSzFJwqIgUsCsHzg4wNuOtsvZ3oqd6ERLcwoofuhupsmv2tg8byAcrB/AK+NTpOE8U9pVAkFKJ85jKrxFwXzHIfOGuBot7Dbiz93AQOtHEJCu1ziGbHE1zRpCppBKUJ1aNEsQbvgfNBwTUPIb68dCoVeKjKRZPdy+PNK7ktos2Bteyfam5//Jts+AjHMEmWX2SGkDwZSyKOQZ7AR8+IE2p7qx/eYpJjxjDqLuXlO/qy6a97kI4Qb8kyBV+RjNK8Ay0TId43XCiOAJ70aVhjOfrM1ig2Kr6NtALemEw0MoKAhEQlNIME7028z6xhna8Y1xK+jSqyBVII9OZRNBResmTqm8IRVxIqAsAc8CPjG6uRCrUEw6SnO+XMUzi5AoR4ayd1D5vNbzZ0Ky7/KFoFM63ZsbsVohC8oxFVTjL+I0KBU2Sr5TYkJl6hrmKJnDFWMKZwMyWdy+U7Ur9GpPk4BkK76DVrFeF9c8zzQjCeINr3mp57ADjRD7Uo4IH9L0GIFQkJgyKhzKpIpBX21wDBn7jx/+V+kU4XeQUbaj5ac9YO1JbaXdgLQ1TKVyajIaJ7oiYn87WrV1j2Tsh/Dv5nMxcDVD+Orgl8xV5tmuFB7THra2QNy7QfHpxUwqXN9tY14XcVsS4dbfQQoLkSZQ3EM6UIBEiOb6mw=
+  on:
+    tags: true
+    repo: LobeTia/statszee-node
