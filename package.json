@@ -1,0 +1,32 @@
+{
+  "name": "statszee-node",
+  "version": "0.3.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint --fix . && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LobeTia/statszee-node.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LobeTia/statszee-node/issues"
+  },
+  "homepage": "https://github.com/LobeTia/statszee-node#readme",
+  "dependencies": {
+    "lodash.defaults": "4.2.0",
+    "request": "2.79.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "3.16.0",
+    "eslint-config-trails": "2.0.8",
+    "mocha": "3.2.0"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  }
+}

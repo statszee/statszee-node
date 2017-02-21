@@ -1,0 +1,6 @@
+./test/**/*.test.js
+--reporter spec
+--recursive
+--full-trace
+--no-exit
+--check-leaks
