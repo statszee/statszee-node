@@ -17,18 +17,18 @@ Run inside a node project
 
 Instance the tracker
 
-  const statszeeCollector = require("statszee-node")
-  const statszeeCollectorInstance = new statszeeCollector({
-    key: ""     // your statszee server key
-    baseUrl: "" // your statszee server basepath
-  })
+    const statszeeCollector = require("statszee-node")
+    const statszeeCollectorInstance = new statszeeCollector({
+      key: ""     // your statszee server key
+      baseUrl: "" // your statszee server basepath
+    })
 
 Track data in your code
   
-  statszeeCollectorInstance.addPoint("event.name")                  // defaults value=1, precision=1h
-  statszeeCollectorInstance.addPoint("event.name","7")              // defaults precision=1h
-  statszeeCollectorInstance.addPoint("event.name","9","1d")         // no defaults
-  statszeeCollectorInstance.addPoint("event.name","9",["1d","1h"])  // multiple precision  
+    statszeeCollectorInstance.addPoint("event.name")                  // defaults value=1, precision=1h
+    statszeeCollectorInstance.addPoint("event.name","7")              // defaults precision=1h
+    statszeeCollectorInstance.addPoint("event.name","9","1d")         // no defaults
+    statszeeCollectorInstance.addPoint("event.name","9",["1d","1h"])  // multiple precision  
 
 ## License
 [MIT](https://github.com/lobetia/statszee/blob/master/LICENSE)
