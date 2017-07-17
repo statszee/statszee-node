@@ -18,7 +18,8 @@ module.exports = class StatszeeDataCollector {
       backPressureQuota: 1000,
       defaultPrecision: '1h',
       start: true,
-      canSend: true
+      canSend: true,
+      token: ''
     })
 
     if (!this.options.key) throw new Error('Statszee require a key')
@@ -35,7 +36,8 @@ module.exports = class StatszeeDataCollector {
       timeout: this.options.timeout,
       headers: {
         'Content-Type': 'text/plain',
-        'X-Stats-Server-Key': this.options.key
+        'X-Stats-Server-Key': this.options.key,
+        'Authorization': 'JWT ' + this.options.token
       }
     })
 
